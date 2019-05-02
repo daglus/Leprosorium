@@ -45,3 +45,9 @@ post '/new' do
 
 	redirect to '/'
 end
+
+get '/details/:id' do
+	post_id = params[:post_id]
+
+	erb "Dysplaying information for post wit id #{post_id}"
+end
